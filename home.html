@@ -30,30 +30,70 @@
     
     <!-- FORMULÁRIO DE CADASTRO -->
     
+    <div class="container-form">
         <form class="container-form" action="/submit" method="post">
-            <label for="nome"><p>Nome completo</p></label>
-            <input type="text" id="nome" name="nome" required>
+            <label for="nome"><p>Nome</p></label>
+            <input 
+            placeholder="Digite seu nome completo"
+            type="text" id="nome" name="nome" required>
 
             <label for="nome"><p>login</p></label>
-            <input type="text" id="nome" name="nome" required>
+            <input 
+            placeholder="Digite seu login"
+            type="text" id="nome" name="nome" required>
 
             <label for="senha"><p>senha</p></label>
-            <input type="password" id="senha" name="senha" required>
+            <input 
+            placeholder="Digite sua senha"
+            type="password" id="senha" name="senha" minlength="6" maxlength="8" required>
 
             <label for="email"><p>Data nascimento</p></label>
             <input type="date" id="data" name="data-nascimento" required>
 
             <label for="email"><p>Email</p></label>
-            <input type="email" id="email" name="email" required>
+            <input 
+            placeholder="exemplo@gmail.com"
+            type="email" id="email" name="email" required>
 
             <label for="telefone"><p>Telefone</p></label>
-            <input type="tel" id="telefone" name="telefone" required>
+            <input 
+            placeholder="(xx) xxxxx-xxxx"
+            type="tel" id="telefone" name="telefone" required>
 
             <label for="endereco"><p>Endereço</p></label>
-            <input type="text" id="endereco" name="endereco" required>
+            <input 
+            placeholder="Digite seu endereço"
+            type="text" id="endereco" name="endereco" required>
+
+            <div class="container-select-estados">
+                <label for="estado"><p>Qual seu estado?</p></label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>Selecione seu estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <!-- Adicione mais estados conforme necessário -->
+                </select>
+            </div>
+        </form>
+    </div>
+    
+    <!-- CHECKBOX PARA ACEITAR TERMOS DE USO -->
+
+    <div class="container-checkbox">
+        <input type="checkbox" name="termos" value="aceito" checked required>
+        <p>
+        Ao enviar este formulário, você concorda com os 
+        <strong><a href="#">termos de uso</a></strong> e a <strong>política de
+        </p>
+         
+    </div>
+
+    
 
             <div class="container-button">
-                <button class="button" type="submit"> Cadastrar </button>
+                <button class="button" type="submit"> Enviar Regístro </button>
             </div>
         </form>
     </main>
