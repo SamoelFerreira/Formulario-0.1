@@ -4,94 +4,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 
-.container-formulario-cadastro {
-    max-width: 700px;
+/* ESTILIZAÇÃO DO CABEÇALHO */
+
+header {
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 55px;
     padding: 20px;
-    background-color: #d6d6d6;
-    border-radius: 18px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #8b0600;
+    color: #f8f8f8;
+    font-size: 16px; 
+    text-align: center;  
 }
 
-/* ESTILIZAÇÂO TITULO E PARAGRAFO */
-
-.container-topo {
-    text-align: center;
-    line-height: 40px;
-    margin-bottom: 20px;
-}
-
-.container-formulario-cadastro {
-    max-width: 700px;
+main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}   
-
-.formulario-cadastro form {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+    padding: 1px 1px;
+}
+
+.paragrafo-topo {
+    margin: 20px 0 0 0;
+    line-height: 30px;
 }
 
 .container-form p {
-    font-size: 18px;
+    margin: 0 0 5px 0;
+    padding: 0 3px 0 3px;
+    font-size: 14px;
     color: #333;
-    text-align: center;
 }
 
+ main h1 {
+    color: #8b0600;
+    padding: 25px 0 10px 0;
+}
 
-/* ESTILIZAÇÃO BUTTON */
+/* ESTILIZAÇÃO DO FORM */
 
-.container-button {
+form {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.button {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: rgb(42, 78, 110);
-}
-
-.button p {
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.button:hover p {
-    color: #ffffff;
-}
-
-.button:hover {
-    background-color: rgb(64, 128, 184);
-}
-
-/* ESTILIZAÇÂO RODAPÉ */
-
-.espacamento {
-    height: 50px; /* Espaço entre o formulário e o rodapé */
-}
-
-.container-footer {
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
+    flex-direction: column;
     width: 100%;
+    padding: 16px 0px;
+}
+
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #8b0600;
+    border: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+    width: 20%;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #c40a00;
+    cursor: pointer;
+}
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+
+footer {
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background: #f8f8f8;
+    color: #8b0600;
 }

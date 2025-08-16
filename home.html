@@ -10,45 +10,53 @@
 
             <!-- LINK CSS E OUTROS -->
 
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="./css/home.css">
 
     <title> Formulário de Cadastro </title>
 </head>
 <body>
-    <div class="container-formulario-cadastro">
-        <div class="container-topo">
-            <h1> Cadastro de Funcionários</h1>
-            <p>Preencha os campos obrigatórios " * "</p>
-        </div>
+    <header>
+        <h1> Lisanform</h1>
+    </header>
 
-        <!-- FORMULÁRIO DE CADASTRO -->
+    <!-- CONTAINER PRINCIPAL DO FORMULÁRIO -->
 
-        <div class="container-formulario">
-            <div class="formulario-cadastro">
-                <form class="container-form" action="/submit" method="post">
-                    <label for="nome"><p>Nome Completo *</p></label>
-                    <input type="text" id="nome" name="nome" required>
+    <main>
+    
+        <h1>Regístro</h1>  
+        
+        
+        <p class="paragrafo-topo">Preencha os campos abaixo para criar o seu registro na empresa. </p>
+    
+    <!-- FORMULÁRIO DE CADASTRO -->
+    
+        <form class="container-form" action="/submit" method="post">
+            <label for="nome"><p>Nome completo</p></label>
+            <input type="text" id="nome" name="nome" required>
 
-                    <label for="email"><p>Email *</p></label>
-                    <input type="email" id="email" name="email" required>
+            <label for="nome"><p>login</p></label>
+            <input type="text" id="nome" name="nome" required>
 
-                    <label for="telefone"><p>Telefone *</p></label>
-                    <input type="tel" id="telefone" name="telefone" required>
+            <label for="senha"><p>senha</p></label>
+            <input type="password" id="senha" name="senha" required>
 
-                    <label for="endereco"><p>Endereço *</p></label>
-                    <input type="text" id="endereco" name="endereco" required>
+            <label for="email"><p>Data nascimento</p></label>
+            <input type="date" id="data" name="data-nascimento" required>
 
-                    <label for="cargo"><p>Cargo *</p></label>
-                    <input type="text" id="cargo" name="cargo" required>
+            <label for="email"><p>Email</p></label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="telefone"><p>Telefone</p></label>
+            <input type="tel" id="telefone" name="telefone" required>
 
-                    <div class="container-button">
-                        <a href="#" class="button"><p>CADASTRAR</p></a>
-                    </div>
-                </form>
+            <label for="endereco"><p>Endereço</p></label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <div class="container-button">
+                <button class="button" type="submit"> Cadastrar </button>
             </div>
-        </div>
-    </div>
+        </form>
+    </main>
 
     <!-- RODAPÉ -->
 
